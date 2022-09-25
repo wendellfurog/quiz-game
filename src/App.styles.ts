@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-image: url(${bg});
     background-size: cover;
-    margin-top: 200px;
-    padding: 0 20px;
+    margin-top: 50px;
+    padding: 0 px;
     display: flex;
     justify-content: center;
   }
@@ -31,25 +31,37 @@ export const Wrapper = styled.div`
   }
 
   .score {
-    color: #000;
+    color: #fff;
     font-size: 2rem;
     margin: 0;
   }
 
-  h1 {
-    font-family: Fascinate Inline, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-image: linear-gradient(180deg, #fff, #87f1ff);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px #0085a3);
+  .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 42px #FF3333,
+      0 0 82px #FF3333,
+      0 0 92px #FF3333,
+      0 0 102px #FF3333,
+      0 0 151px #FF3333;
+    font-family: 'Exo 2', sans-serif;
     font-size: 70px;
-    font-weight: 400;
-    text-align: center;
-    margin: 20px;
+  }
+
+  h1 {
+    border: 0.2rem solid #00FFFF;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 
+      0 0 .2rem #fff,
+      0 0 .2rem #fff,
+      0 0 2rem #0080FF,
+      0 0 0.8rem #0080FF,
+      0 0 2.8rem #0080FF,
+      inset 0 0 1.3rem #0080FF; 
   }
 
   .start, .next {

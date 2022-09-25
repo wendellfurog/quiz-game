@@ -32,13 +32,13 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
     font-size: 1.3rem;
     width: 100%;
     height: 40px;
-    margin: 5px 0;
+    margin: 2px 0;
     background: ${({ correct, userClicked }) => 
       correct
         ? 'linear-gradient(90deg, #56ffa4, #59bc8666)'
         : !correct && userClicked
         ? 'linear-gradient(90deg, #ff5656, #c16868)'
-        : 'linear-gradient(90deg, #56ccff, #6eafb4)'};
+        : 'linear-gradient(90deg, #0080FF, #66B2FF)'};
     border: 3px solid #fff;
     box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
