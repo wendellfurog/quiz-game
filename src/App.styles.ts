@@ -35,6 +35,12 @@ export const Wrapper = styled.div`
     font-size: 2rem;
     margin: 0;
   }
+  
+  .loading {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+  }
 
   .neonText {
     color: #fff;
@@ -65,6 +71,7 @@ export const Wrapper = styled.div`
   }
 
   .start, .next {
+    font-size: 20px;
     cursor: pointer;
     background: linear-gradient(180deg, #fff, #ffcc91);
     border: 2px solid $d38558;
